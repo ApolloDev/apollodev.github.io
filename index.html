@@ -1,16 +1,99 @@
+<!DOCTYPE html>
+<!-- Template by quackit.com -->
 <html>
-<body>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>2 Column Layout &mdash; Left Menu</title>
+		<style type="text/css">
+		
+			body{
+				margin:0;
+				padding:0;
+				font-family: Sans-Serif;
+				line-height: 1.5em;
+			}
+			
+			main {
+				position: absolute;
+				left: 275px;
+				top: 0px;
+				width: calc(100%-275px);
+			}
+			
+			#nav {
+				width: 275px;
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				bottom: 0px;
+				background: #eee;
+			}
+			
+			#wrapper {
+				overflow: hidden;
+			}
+			
+			
+			
+			.innertube{
+				margin: 15px; /* Padding for content */
+				margin-top: 0;
+			}
+			
+			p {
+				color: #555;
+			}
+	
+			nav ul {
+				list-style-type: none;
+				margin-left: 0;
+				padding: 0;
+			}
+			
+			nav ul a {
+				color: darkblue;
+				text-decoration: none;
+			}
 
-
-<p><img align="left" src="https://raw.githubusercontent.com/ApolloDev/apollo/wiki/img/apollo_logo.png"/></p>
-
+			hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+	
+		</style>
+		
+		<script type="text/javascript">
+			/* =============================
+			This script generates sample text for the body content. 
+			You can remove this script and any reference to it. 
+			 ============================= */
+			var bodyText=["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h3>Heading</h3><p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now."]
+			function generateText(sentenceCount){
+				for (var i=0; i<sentenceCount; i++)
+				document.write(bodyText[Math.floor(Math.random()*7)]+" ")
+			}
+		</script>	
+	
+	</head>
+	
+	<body>
+		<div id="wrapper">
+		
+			<main>
+				<div id="content">
+					<div class="innertube">
+						
+<div><p style="float: left; padding-right: 10px;"><img src="https://raw.githubusercontent.com/ApolloDev/apollo/wiki/img/apollo_logo.png"/></p>
+<br/><br/>
 <h1 id="about">About</h1>
-
+<hr/>
 <p>The goal of this project is to increase programmatic access to epidemic simulators, which are a class of simulation software specialized for modeling epidemics and control strategies (mitigation strategies).
-<br><br><br><br><br><br></p>
-
+<br><br><br><br><br><br></p></div>
+<div style="clear: left;">
 <h1 id="apolloprojects">Apollo Projects</h1>
-
+<hr/>
 <p>Currently, Apollo consists of four efforts:</p>
 
 <ol>
@@ -23,11 +106,19 @@
 <li>Developing an ontology for epidemic simulation, called <em>Apollo-SV</em> (Structured Vocabulary).</li>
 </ol>
 
+<p>The video below provides an overview of the Apollo project.</p>
+
+<iframe width="640" height="360"
+src="https://www.youtube.com/embed/T4bfIaw2iUA">
+</iframe>
+
 <h2 id="apolloschema">Apollo Schema</h2>
+<hr/>
 
 <p>The Apollo Schema defines a set of data types that in combination can define a complex infectious disease scenario for simulation.  The schema support representations of world-wide scenarios involving multiple pathogens, host species, and infectious disease control strategies.</p>
 
 <h2 id="apollowebservices">Apollo Web Services</h2>
+<hr/>
 
 <p>The Apollo Web Services are SOAP Web services.  The defined service types are Broker, Library, Simulator, Visualizer, and Translator.  A single service, the Broker Service, is the single point of access for end-user applications to a set of epidemic simulators and visualizers that create graphs and movies of a simulator's results.  Currently, the Broker Service connects to the:</p>
 
@@ -44,12 +135,14 @@
 </ul>
 
 <h2 id="asimpleenduserapplicationthatusestheapollowebservices">A Simple End-user Application that Uses the Apollo Web Services</h2>
+<hr/>
 
 <p>We have developed a simple Web application to demonstrate the services offered by the Apollo Web Services.  We are hosting this application at [http://research.rods.pitt.edu/seua].</p>
 
 <p>A video showing how the simple end-user application uses the Apollo Web Services is at http://www.youtube.com/watch?v=T4bfIaw2iUA.  A video of an earlier version of the Apollo Web Services and the simple end-user application is at http://www.youtube.com/watch?v=-QdvoPNK9MY.</p>
 
 <h2 id="apollosv">Apollo-SV</h2>
+<hr/>
 
 <p>Apollo-SV, developed as an OWL specification, defines the terms and relations necessary for interoperation between epidemic simulators and public health application software that interface with these simulators.  The latest release of the ontology is always available at the following link: http://purl.obolibrary.org/obo/apollo_sv.owl.</p>
 
@@ -57,19 +150,43 @@
 
 <p>For instructions on viewing Apollo-SV, click [https://github.com/ApolloDev/apollo/wiki/Apollo-SV-BasicsOfViewing here].</p>
 
-<h2 id="acknowledgements">Acknowledgements</h2>
-
+<h1 id="acknowledgements">Acknowledgements</h1>
+<hr/>
 <table border=0>
 <tr>
   <td>
      The Apollo Software Development Team would like to thank PremiumSoft™ CyberTech Ltd. for supporting this open source project by providing the project with a free license for Navicat.
  </td>
-  <td width="375"><a href="http://www.navicat.com"><img src="https://github.com/ApolloDev/apollo/blob/wiki/img/navicat.png" align="left" height="100" ></a>
+  <td width="375"><a href="http://www.navicat.com"><img src="https://github.com/ApolloDev/apollo/raw/wiki/img/navicat.png" align="left" height="100" ></a>
   </td><tr></tr>
 <tr style="background-color:white">
   <td>The Apollo Software Development Team would also like to thank JetBrains s.r.o for providing this open source project with free licenses for the amazing IntelliJ IDE.</td>
-  <td width="375"><a href="http://www.jetbrains.com/idea/"><img src="https://github.com/ApolloDev/apollo/blob/wiki/img/logo_intellij_idea.png" align="left" width="312" ></a></td>
+  <td width="375"><a href="http://www.jetbrains.com/idea/"><img src="https://github.com/ApolloDev/apollo/raw/wiki/img/logo_intellij_idea.png" align="left" width="312" ></a></td>
 <tr>
 </table>
-</body>
+					</div>
+				</div>
+			</main>
+			
+			<nav id="nav">
+				<div class="innertube">
+					<h3>Contents</h3>
+					<ul>
+						<li><a href="#about">About</a></li>
+						<li><a href="#apolloprojects">Apollo Projects</a>
+						<ul style="margin-left: 20px;">
+						<li><a href="#apolloschema">Apollo Schema</a></li>
+						<li><a href="#apollowebservices">Apollo Web Services</a></li>
+						<li><a href="#asimpleenduserapplicationthatusestheapollowebservices">Simple End-user Application</a></li>
+						<li><a href="#apollosv">Apollo-SV</a></li>
+						</ul>
+						<li><a href="#acknowledgements">Acknowledgements</a></li>
+						</li>
+
+					</ul>
+				</div>
+			</nav>
+			
+		</div>
+	</body>
 </html>
